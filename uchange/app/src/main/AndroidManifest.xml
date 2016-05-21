@@ -22,7 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SendRequest"></activity>
+
+        <activity android:name=".SendRequest" android:label="@string/title_activity_sendRequest">
+            <intent-filter>
+                <action android:name="ru.startandroid.intent.action.setup"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
